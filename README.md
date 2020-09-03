@@ -11,6 +11,22 @@ The images are uploaded to and stored in Google Drive, which can be mounted by C
 To speed up the training process, every image is reduced to a smaller color palette. The code in reassign_cluster.ipynb takes all of the image's pixel values, finds n=32 clusters, and declare each cluster centre will be a color in the output image.
 
 
+## Instructions to run the notebook
+Note: I recommend running the notebook using Google Colab, where we can utilize Google's powerful GPUs to help speed up the training process. In addition, there is no need to install any new libraries as they have already been installed on the remote machines.
+
+1. First, download the [Stanford cars dataset](https://www.kaggle.com/jutrera/stanford-car-dataset-by-classes-folder)
+
+2. Extract the zip file into a folder and upload it into your Google Drive
+
+3. In this repository, click on cars_classification.ipynb and then "Open in Colab"
+
+4. Go to the new tab and ensure that you are logged into your Google account
+
+5. Modify `data_path` if it does not match the location of your dataset in Google Drive
+
+6. Click on "Runtime" and "Run all", then "Run anyway" when a warning shows up
+
+
 ## Acknowledgements
 The dataset is provided by [Stanford](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
